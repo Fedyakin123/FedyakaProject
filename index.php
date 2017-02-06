@@ -12,7 +12,7 @@
 			<div>
 				<div>
 					<div>
-						<img src="img/content/avatar1.jpg" alt="Avatar">
+						<img src="img/content/Avatar1.jpg" alt="Avatar">
 					</div>
 					<div>Константин Константинов</div>
 				</div>
