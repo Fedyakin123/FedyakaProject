@@ -1,0 +1,29 @@
+.sidebar {
+    float: left;
+    width: 220px;
+}
+.nav {
+    text-align: right;
+}
+.nav__link {
+    padding: 9px 23px 10px 0;
+    font-size: 18px;
+    display: block;
+    border-right: 6px solid transparent;
+    color: #414141;
+}
+.nav__link:hover {
+    color: #33c1e3;
+}
+.nav__item_selected .nav__link{
+    font-weight: bold;
+    color: #33c1e3;
+    border-color: #33c1e3;
+}
+.nav__icon, .nav__title {
+    vertical-align: middle;
+    display: inline-block;
+}
+.nav__title {
+    margin-left: 5px;
+}

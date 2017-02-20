@@ -1,0 +1,47 @@
+.header {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    height: 75px;
+    padding-bottom: 9px;
+    margin-bottom: 23px;
+}
+.header__left {
+    float: left;
+    padding-top: 9px;
+}
+.user__photo {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #bebebe;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user__img {
+    /*border-radius: 50%;*/
+    display: block;
+}
+.user__name {
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle;
+    color: #414141;
+    max-width: 235px;
+}
+.header__right {
+    float: right;
+    padding-top: 29px;
+}
+.contacts {
+    line-height: 1.2;
+    /*Поменять на bg-image*/
+    font-size: 18px;
+    font-weight: bold;
+    color: #33c1e3;
+    border-bottom: 1px dashed #33c1e3;
+    /*padding-bottom: 5px;*/
+}
+.contacts:hover {
+    color: #e85f61;
+    border-bottom-color: #e85f61;
+}

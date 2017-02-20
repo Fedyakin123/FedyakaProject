@@ -1,0 +1,36 @@
+/*BASIC STYLES START*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+    min-width: 960px;
+}
+.wrapper::after {
+    content: '';
+    display: block;
+    height: 50px;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: normal;
+}
+/*BASIC STYLES END*/
