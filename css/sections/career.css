@@ -43,6 +43,7 @@
     padding-left: 80px;
     /*border: 1px solid black;*/
     /*float: right;*/
+    overflow: hidden;
 }
 .item-box {
     border-radius: 10px;
