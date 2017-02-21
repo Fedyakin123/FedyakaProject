@@ -1,83 +1,136 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
+<!--[if lt IE8]>
+<p class="browserhappy">
+	Ваш браузер <strong>устарел</strong>.
+	Пожалуйста, <a href="http://browserhappy.com/">обновите</a>.
+</p>
+<![endif]-->
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width">
+
 	<link rel="stylesheet" href="css/layout/normalize.css">
+	<link rel="stylesheet" href="css/layout/font-awesome.min.css">
+	<link rel="stylesheet" href="css/layout/fonts.css">
+	<link rel="stylesheet" href="css/layout/adjustement.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 	<link rel="stylesheet" href="css/sections/common.css">
+	<link rel="stylesheet" href="css/sections/header.css">
+	<link rel="stylesheet" href="css/sections/content.css">
+	<link rel="stylesheet" href="css/sections/sidebar.css">
+	<link rel="stylesheet" href="css/sections/about.css">
+	<link rel="stylesheet" href="css/sections/footer.css">
+	<link rel="stylesheet" href="css/sections/career.css">
+
 	<title>About Me</title>
 </head>
 <body>
 <div class="wrapper">
 
-<!-- HEADER START-->
+	<!--HEADER START-->
 
-	<header>
-		<div class="container">
-			<div>
-				<div>
-					<div>
-						<img src="img/content/Avatar1.jpg" alt="Avatar">
+	<header class="header">
+		<div class="container clearfix">
+			<div class="header__left">
+				<div class="user">
+					<div class="user__photo">
+						<img class="user__img" src="img/content/Avatar1.jpg" alt="Avatar" width="60px" height="60px">
 					</div>
-					<div>Константин Константинов</div>
+					<div class="user__name">Константин Константинов</div>
 				</div>
 			</div>
-			<div><a href="#">Мои контакты</a></div>
+
+			<div class="header__right">
+				<a class="contacts" href="hello.html">Мои контакты</a>
+				<!-- Не забыть поменять ссылку -->
+			</div>
+
 		</div>
 	</header>
 
-<!-- CONTENT START -->
+	<!--CONTENT START-->
 
-	<section>
-		<div class="container">
-			<aside>
-				<nav>
-					<ul>
-						<li><a href="index.html">Обо мне</a></li>
-						<li><a href="#">Карьерный путь</a></li>
-						<li><a href="portfolio.html">Портфолио</a></li>
+	<section class="content">
+		<div class="container clearfix">
+			<aside class="sidebar">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link" href="index.html">
+								<span class="nav__icon"><i class="fa fa-user-secret" aria-hidden="true"></i></span>
+								<span class="nav__title">Обо мне</span>
+							</a>
+						</li>
+						<li class="nav__item nav__item_selected">
+							<a class="nav__link" href="career.html">
+								<span class="nav__icon"><i class="fa fa-rocket" aria-hidden="true"></i></span>
+								<span class="nav__title">Карьерный путь</span>
+							</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">
+								<span class="nav__icon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+								<span class="nav__title">Портфолио</span>
+							</a>
+						</li>
+
 					</ul>
 				</nav>
 			</aside>
 
-			<main>
-				<div>
-					<h1>Карьерный путь</h1>
-					<div>
-						<div>
-							<div><img src="img/content/University.jpg" alt="Univercity"></div>
+			<main class="page">
+				<div class="career">
+					<!--не нужен ли тут clearfix?-->
+					<h1 class="title">Карьерный путь</h1>
+					<div class="career__container clearfix">
+						<div class="career__left">
+							<div class="career__img-box">
+								<img class="career__img" src="img/content/University.jpg" alt="Univercity">
+							</div>
 						</div>
-						<div>
-							<ul>
-								<li>
-									<div>
-										<div>11</div>
-										<div>21</div>
-										<div>31</div>
-										<div>41</div>
+
+						<!-- Правая колонка карьеры-->
+						<div class="career__right">
+							<ul class="career__list clearfix">
+								<li class="career__list-item">
+									<div class="item-box">
+										<div class="item-box__company">ООО «Звезды путешествий»</div>
+										<div class="item-box__occupation">Системный администратор</div>
+										<div class="item-box__period">2015 - по настоящее время</div>
+										<div class="item-box__year">2016</div>
 									</div>
 								</li>
-								<li>
-									<div>
-										<div>12</div>
-										<div>22</div>
-										<div>32</div>
-										<div>42</div>
+								<li class="career__list-item">
+									<div class="item-box">
+										<div class="item-box__company">Санкт-Петербургский государственный университет</div>
+										<!--<div class="item-box__occupation"></div>-->
+										<div class="item-box__period">2012-2015</div>
+										<div class="item-box__year">2015</div>
 									</div>
 								</li>
-								<li>
-									<div>
-										<div>13</div>
-										<div>23</div>
-										<div>33</div>
-										<div>44</div>
+								<li class="career__list-item">
+									<div class="item-box">
+										<div class="item-box__company">ООО "Лига Супергероев"</div>
+										<div class="item-box__occupation">Человек-молекула</div>
+										<div class="item-box__period">2012-2014</div>
+										<div class="item-box__year">2014</div>
+									</div>
+								</li>
+								<li class="career__list-item">
+									<div class="item-box">
+										<div class="item-box__company">ООО «Звезды путешествий»</div>
+										<div class="item-box__occupation">Иван Федорович Крузенштерн, человек и пароход</div>
+										<div class="item-box__period">2013 - по настоящее время</div>
+										<div class="item-box__year">2013</div>
 									</div>
 								</li>
 							</ul>
 						</div>
 					</div>
-					
 				</div>
 			</main>
 		</div>
@@ -87,20 +140,26 @@
 
 <!--FOOTER START-->
 
-<footer>
+<footer class="footer clearfix">
 	<div class="container">
-		<div>
-			<div>&copy; Разработано в школе LoftSchool</div>
+		<div class="footer__left">
+			<div class="copyright">&copy; Дизайн сайта был разработан в школе LoftSchool</div>
 		</div>
-		<div>
-			<ul>
-				<li><a href="#">Fb</a></li>
-				<li><a href="#">Vk</a></li>
-				<li><a href="#">Tw</a></li>
+		<div class="footer__right">
+			<ul class="socials">
+				<li class="socials__item">
+					<a class="sprite sprite-FaceBook socials__link" href="#"></a>
+				</li>
+				<li class="socials__item">
+					<a class="sprite sprite-vk socials__link" href="#"></a>
+				</li>
+				<li class="socials__item">
+					<a class="sprite sprite-Twitter socials__link " href="#"></a>
+				</li>
 			</ul>
 		</div>
 	</div>
 </footer>
-	
+
 </body>
 </html>

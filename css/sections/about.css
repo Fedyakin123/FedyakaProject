@@ -2,6 +2,9 @@
     float: left;
     width: 720px;
 }
+.about {
+    margin-bottom: 72px;
+}
 .about__left {
     float: left;
     width: 340px;

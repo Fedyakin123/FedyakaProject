@@ -1,0 +1,148 @@
+.career {
+    padding-left: 20px;
+}
+.career__container {
+    padding-top: 7px;
+}
+
+.career__img-box {
+    border-radius: 9px;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+}
+
+.career__img {
+    height: 220px;
+    position: relative;
+    right: 50px;
+}
+
+.career__left, .career__right {
+    float: left;
+}
+
+.career__left {
+    width: 240px;
+}
+
+.career__right {
+    width: 460px;
+    /*background-color: yellow;*/
+}
+
+.career__list {
+    text-align: right;
+    /*padding-left: 70px;*/
+}
+
+.career__list-item {
+    /*height: 107px;*/
+    /*display: inline-block;*/
+    /*background-color: red;*/
+    padding-left: 80px;
+    /*border: 1px solid black;*/
+    /*float: right;*/
+}
+.item-box {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    width: 380px;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    text-align: left;
+    position: relative;
+
+}
+
+/*Палка*/
+
+.item-box::after, .item-box::before {
+    content: '';
+    display: block;
+    width: 1px;
+    background: #ddd;
+    position: absolute;
+    right: 100%;
+    margin-right: 20px;
+}
+
+.item-box::before {
+    top: 0;
+    bottom: 50%;
+}
+
+.item-box::after {
+    top: 50%;
+    bottom: -20px;
+}
+
+.career__list-item:first-child .item-box::before,
+.career__list-item:last-child .item-box::after {
+    display: none;
+}
+/*Конец палки*/
+
+.item-box__company {
+    font-size: 21px;
+    color: #5a5a5a;
+    /*margin-bottom: 5px;*/
+}
+
+.item-box__occupation, .item-box__period {
+    font-weight: 300;
+    color: #727272;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.item-box__period {
+    margin-bottom: 0;
+}
+
+.item-box__year {
+    position: absolute;
+    top: 50%;
+    /*right: 420px;*/
+    right: 100%;
+    margin-right: 35px;
+    font-size: 14px;
+    color: #727272;
+    line-height: 28px;
+    margin-top: -14px;
+    z-index: 10;
+}
+.item-box__year::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #33c1e3;
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    margin-top: -10px;
+    border: 5px solid #f6f6f6;
+}
+
+/*Hover*/
+
+.career__list-item:hover .item-box {
+    background: #33c1e3;
+}
+.career__list-item:hover .item-box__company,
+.career__list-item:hover .item-box__occupation,
+.career__list-item:hover .item-box__period {
+    color: #fff;
+}
+
+.career__list-item:hover .item-box__year {
+    color: #33c1e3;
+    font-weight: 700;
+    font-size: 18px;
+}
+.career__list-item:hover .item-box__year::after {
+    border-color: #94e0f2;
+}
