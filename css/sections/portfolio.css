@@ -1,0 +1,64 @@
+.portfolio {
+    /*padding-left: 20px;*/
+    /*background: #ddd;*/
+}
+
+.portfolio__list {
+    font-size: 0;
+}
+.portfolio__item {
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    width: 220px;
+    min-height: 281px;
+    /*overflow: hidden;*/
+    margin: 0 0 20px 20px;
+    /*float: left;*/
+    display: inline-block;
+    vertical-align: top;
+}
+
+.portfolio__img-box {
+    height: 173px;
+    overflow: hidden;
+    /*background: url("../../img/content/DealsApp.jpg");*/
+    /*background-size: cover;*/
+
+}
+.portfolio__pic {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.portfolio__text-box {
+    padding: 15px 20px 20px 20px;
+}
+
+.portfolio__title {
+    font-size: 21px;
+    color: #33c1e3;
+
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+
+.portfolio__info {
+    font-weight: 300;
+    color: #4e4e4e;
+    font-size: 14px;
+}
+.portfolio__type {
+    padding-top: 11px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #aeaeae;
+    /*line-height: 30px;*/
+}
+.portfolio__type i {
+    font-size: 18px;
+}
+
+.portfolio__item:hover .portfolio__title {
+    color: #e85f61;
+}

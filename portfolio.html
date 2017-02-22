@@ -1,118 +1,235 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
+<!--[if lt IE8]>
+<p class="browserhappy">
+    Ваш браузер <strong>устарел</strong>.
+    Пожалуйста, <a href="http://browserhappy.com/">обновите</a>.
+</p>
+<![endif]-->
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="css/layout/normalize.css">
-	<link rel="stylesheet" href="css/sections/common.css">
-	<title>About Me</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/layout/normalize.css">
+    <link rel="stylesheet" href="css/layout/font-awesome.min.css">
+    <link rel="stylesheet" href="css/layout/fonts.css">
+    <link rel="stylesheet" href="css/layout/adjustement.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/sections/common.css">
+    <link rel="stylesheet" href="css/sections/header.css">
+    <link rel="stylesheet" href="css/sections/content.css">
+    <link rel="stylesheet" href="css/sections/sidebar.css">
+    <link rel="stylesheet" href="css/sections/about.css">
+    <link rel="stylesheet" href="css/sections/footer.css">
+    <link rel="stylesheet" href="css/sections/career.css">
+    <link rel="stylesheet" href="css/sections/portfolio.css">
+
+
+    <title>About Me</title>
 </head>
 <body>
 <div class="wrapper">
 
-<!--HEADER START-->
+    <!--HEADER START-->
 
-	<header>
-		<div class="container">
-			<div>
-				<div>
-					<div>
-						<img src="img/content/Avatar1.jpg" alt="Avatar">
-					</div>
-					<div>Константин Константинов</div>
-				</div>
-			</div>
-			<div><a href="#">Мои контакты</a></div>
-		</div>
-	</header>
+    <header class="header">
+        <div class="container clearfix">
+            <div class="header__left">
+                <div class="user">
+                    <div class="user__photo">
+                        <img class="user__img" src="img/content/Avatar1.jpg" alt="Avatar" width="60" height="60">
+                    </div>
+                    <a href="hello.html"><div class="user__name">Константин Константинов</div></a>
+                </div>
+            </div>
 
-<!--CONTENT START-->
+            <div class="header__right">
+                <a class="contacts" href="hello.html">Мои контакты</a>
+                <!-- Не забыть поменять ссылку -->
+            </div>
 
-	<section>
-		<div class="container">
-			<aside>
-				<nav>
-					<ul>
-						<li><a href="index.html">Обо мне</a></li>
-						<li><a href="career.html">Карьерный путь</a></li>
-						<li><a href="#">Портфолио</a></li>
-					</ul>
-				</nav>
-			</aside>
+        </div>
+    </header>
 
-			<main>
-				<div>
-					
-					<!-- Идея: h1{Портфолио}+div>(div>a>(div+div>div*3))*5 //по факту похоже, только ul>(li>a>(div+div>div*3))*5-->
+    <!--CONTENT START-->
 
-					<h1>Портфолио</h1>
-					<ul>
-						<li><a href="#">
-								<div><img src="img/content/DealsApp.jpg" alt="DealsApp"></div>
-								<div>
-									<div>DealsApp</div>
-									<div>Продажа одежды</div>
-									<div>Приложение</div>
-								</div>
-							</a></li>
-						<li><a href="#">
-								<div><img src="img/content/Dreamscapes.jpg" alt="Dreamscapes"></div>
-								<div>
-									<div>Dreamscapes</div>
-									<div>Лагуна Люфтганза</div>
-									<div>Лендинг</div>
-								</div>
-							</a></li>
-						<li><a href="#">
-								<div><img src="img/content/CreativeStudio.jpg" alt="CreativeStudio"></div>
-								<div>
-									<div>Creative Studio</div>
-									<div>Танцевальная студия</div>
-									<div>Корпоративный сайт</div>
-								</div>
-							</a></li>
-						<li><a href="#">
-								<div><img src="img/content/Carbonara.jpg" alt="Carbonara"></div>
-								<div>
-									<div>Studio Frog</div>
-									<div>Мебельный магазин</div>
-									<div>Лендинг</div>
-								</div>
-							</a></li>
-						<li><a href="#">
-								<div><img src="img/content/StudioFrog.jpg" alt="StudioFrog"></div>
-								<div>
-									<div>Carbonara</div>
-									<div>Итальянский ресторан</div>
-									<div>Лендинг</div>
-								</div>
-							</a></li>
-					</ul>
+    <section class="content">
+        <div class="container clearfix">
+            <aside class="sidebar">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">
+                                <span class="nav__icon"><i class="fa fa-user-secret" aria-hidden="true"></i></span>
+                                <span class="nav__title">Обо мне</span>
+                            </a>
+                        </li>
+                        <li class="nav__item ">
+                            <a class="nav__link" href="career.html">
+                                <span class="nav__icon"><i class="fa fa-rocket" aria-hidden="true"></i></span>
+                                <span class="nav__title">Карьерный путь</span>
+                            </a>
+                        </li>
+                        <li class="nav__item nav__item_selected">
+                            <a class="nav__link" href="#">
+                                <span class="nav__icon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                                <span class="nav__title">Портфолио</span>
+                            </a>
+                        </li>
 
-				</div>
-			</main>
-		</div>
-	</section>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="page">
+
+                <div class="portfolio">
+                    <h1 class="title title_padding-left">Портфолио</h1>
+                    <ul class="portfolio__list clearfix">
+                        <li class=" portfolio__item">
+                            <a class="portfolio__link" href="#">
+                                <div class="portfolio__img-box">
+                                    <img class="portfolio__pic" src="img/content/DealsApp.jpg" alt="DealsApp">
+                                </div>
+                                <div class="portfolio__text-box">
+                                    <div class="portfolio__title">Deals App</div>
+                                    <div class="portfolio__info">Продажа одежды</div>
+                                    <div class="portfolio__type">
+                                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                                        &nbsp;Приложение
+                                    </div>
+                                </div>>
+                            </a>
+                        </li>
+                        <li class=" portfolio__item">
+                            <a class="portfolio__link" href="#">
+                                <div class="portfolio__img-box">
+                                    <img class="portfolio__pic" src="img/content/Dreamscapes.jpg" alt="Dreamscapes">
+                                </div>
+                                <div class="portfolio__text-box">
+                                    <div class="portfolio__title">Dream-scapes</div>
+                                    <div class="portfolio__info">Лагуна люфтганза</div>
+                                <div class="portfolio__type">
+                                    <i class="fa fa-desktop" aria-hidden="true"></i>
+                                    &nbsp;Лендинг
+                                </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class=" portfolio__item">
+                            <a class="portfolio__link" href="#">
+                                <div class="portfolio__img-box">
+                                    <img class="portfolio__pic" src="img/content/CreativeStudio.jpg" alt="CreativeStudio">
+                                </div>
+                                <div class="portfolio__text-box">
+                                    <div class="portfolio__title">Creative studio</div>
+                                    <div class="portfolio__info">Танцевальная студия</div>
+                                    <div class="portfolio__type">
+                                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                                        &nbsp;Корпоративный сайт
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class=" portfolio__item">
+                            <a class="portfolio__link" href="#">
+                                <div class="portfolio__img-box">
+                                    <img class="portfolio__pic" src="img/content/StudioFrog.jpg" alt="StudioFrog">
+                                </div>
+                                <div class="portfolio__text-box">
+                                    <div class="portfolio__title">Studio Frog</div>
+                                    <div class="portfolio__info">Мебельный магазин</div>
+                                    <div class="portfolio__type">
+                                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                                        &nbsp;Лендинг
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class=" portfolio__item">
+                            <a class="portfolio__link" href="#">
+                                <div class="portfolio__img-box">
+                                    <img class="portfolio__pic" src="img/content/Carbonara.jpg" alt="Carbonara">
+                                </div>
+                                <div class="portfolio__text-box">
+                                    <div class="portfolio__title">Carbonara</div>
+                                    <div class="portfolio__info">Итальянский ресторан</div>
+                                    <div class="portfolio__type">
+                                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                                        &nbsp;Лендинг
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </main>
+        </div>
+    </section>
 
 </div>
 
 <!--FOOTER START-->
 
-<footer>
-	<div class="container">
-		<div>
-			<div>&copy; Разработано в школе LoftSchool</div>
-		</div>
-		<div>
-			<ul>
-				<li><a href="#">Fb</a></li>
-				<li><a href="#">Vk</a></li>
-				<li><a href="#">Tw</a></li>
-			</ul>
-		</div>
-	</div>
+<footer class="footer clearfix">
+    <div class="container">
+        <div class="footer__left">
+            <div class="copyright">&copy; Дизайн сайта был разработан в школе LoftSchool</div>
+        </div>
+        <div class="footer__right">
+            <ul class="socials">
+                <li class="socials__item">
+                    <a class="sprite sprite-FaceBook socials__link" href="#"></a>
+                </li>
+                <li class="socials__item">
+                    <a class="sprite sprite-vk socials__link" href="#"></a>
+                </li>
+                <li class="socials__item">
+                    <a class="sprite sprite-Twitter socials__link " href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </footer>
-	
+
 </body>
 </html>
+
+
+<!--<li><a href="#">-->
+    <!--<div><img src="img/content/Dreamscapes.jpg" alt="Dreamscapes"></div>-->
+    <!--<div>-->
+        <!--<div>Dreamscapes</div>-->
+        <!--<div>Лагуна Люфтганза</div>-->
+        <!--<div>Лендинг</div>-->
+    <!--</div>-->
+<!--</a></li>-->
+<!--<li><a href="#">-->
+    <!--<div><img src="img/content/CreativeStudio.jpg" alt="CreativeStudio"></div>-->
+    <!--<div>-->
+        <!--<div>Creative Studio</div>-->
+        <!--<div>Танцевальная студия</div>-->
+        <!--<div>Корпоративный сайт</div>-->
+    <!--</div>-->
+<!--</a></li>-->
+<!--<li><a href="#">-->
+    <!--<div><img src="img/content/Carbonara.jpg" alt="Carbonara"></div>-->
+    <!--<div>-->
+        <!--<div>Studio Frog</div>-->
+        <!--<div>Мебельный магазин</div>-->
+        <!--<div>Лендинг</div>-->
+    <!--</div>-->
+<!--</a></li>-->
+<!--<li><a href="#">-->
+    <!--<div><img src="img/content/StudioFrog.jpg" alt="StudioFrog"></div>-->
+    <!--<div>-->
+        <!--<div>Carbonara</div>-->
+        <!--<div>Итальянский ресторан</div>-->
+        <!--<div>Лендинг</div>-->
+    <!--</div>-->
+<!--</a></li>-->

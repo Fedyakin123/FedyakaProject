@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
+<!--[if lt IE8]>
+<p class="browserhappy">
+	Ваш браузер <strong>устарел</strong>.
+	Пожалуйста, <a href="http://browserhappy.com/">обновите</a>.
+</p>
+<![endif]-->
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width">
+
 	<link rel="stylesheet" href="css/layout/normalize.css">
+	<link rel="stylesheet" href="css/layout/font-awesome.min.css">
+	<link rel="stylesheet" href="css/layout/fonts.css">
+	<link rel="stylesheet" href="css/layout/adjustement.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 	<link rel="stylesheet" href="css/sections/common.css">
-	<title>Document</title>
+	<link rel="stylesheet" href="css/sections/header.css">
+	<link rel="stylesheet" href="css/sections/content.css">
+	<link rel="stylesheet" href="css/sections/sidebar.css">
+	<link rel="stylesheet" href="css/sections/about.css">
+	<link rel="stylesheet" href="css/sections/footer.css">
+	<link rel="stylesheet" href="css/sections/career.css">
+	<link rel="stylesheet" href="css/sections/hello.css">
+
+	<title>About Me</title>
 </head>
-<body>
-	<!-- div>(div>(div>img)+h1)+div>a[#]{Перейти на сайт} что-то такое придумалось -->
-	<div>
-		<div>
-			<div><img src="img/content/Avatar1.jpg" alt=""></div>
-			<h1>Константин Константинов</h1>
+<body class="bg-pattern">
+	<div class="container">
+		<div class="hello__box">
+			<div class="hello__user-box">
+				<div class="hello__img-box">
+					<img class="hello__pic" src="img/content/Avatar1.jpg" alt="">
+				</div>
+				<h1 class="hello__name">Константин<br />Константинов</h1>
+			</div>
+			<div class="hello__btn-box">
+				<a class="btn hello__btn" href="index.html">Перейти на сайт</a>
+			</div>
+
 		</div>
-		<div><a href="index.html">Перейти на сайт</a></div>
 	</div>
 </body>
 </html>

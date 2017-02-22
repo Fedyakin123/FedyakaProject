@@ -22,6 +22,10 @@ body {
     margin-bottom: 11px;
 }
 
+.title_padding-left {
+    padding-left: 20px;
+}
+
 a {
     text-decoration: none;
 }
@@ -49,14 +53,15 @@ a {
     font-weight: bold;
     /*font-size: 14px;*/
 }
-.btn:hover {
-    background: #e85f61;
-    color: #fff;
-}
+
 .btn__text {
     margin-left: 8px;
 }
 .btn__text, .btn__icon {
     display: inline-block;
     vertical-align: middle;
+}
+
+.bg-pattern {
+    background: url("../../img/bg/bgpattern.png");
 }

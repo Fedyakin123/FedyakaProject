@@ -44,3 +44,8 @@
 .about__btn {
     text-align: right;
 }
+
+.download-btn:hover {
+    background: #e85f61;
+    color: #fff;
+}
