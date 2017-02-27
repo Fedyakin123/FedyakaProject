@@ -1,0 +1,39 @@
+@media screen and (max-width: 992px) {
+
+  .container {
+    width: 730px;
+    //background: #CFC;
+  }
+
+  .sidebar, .page {
+    float: none;
+    width: 100%;
+  }
+
+  .nav__list{
+    text-align: left;
+  }
+
+  .nav__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px;
+  }
+
+  .nav__link {
+    border-right: none;
+    padding-right: 0;
+
+  }
+
+  .about__img {
+    width: 165px;
+    height: 165px;
+  }
+  .about__left {
+    width: 30%;
+  }
+  .about__right {
+    width: 70%;
+  }
+}

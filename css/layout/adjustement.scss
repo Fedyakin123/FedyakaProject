@@ -9,17 +9,18 @@ html, body {
     position: relative;
     min-height: 100%;
     overflow: hidden;
-    min-width: 960px;
+    //min-width: 960px;
 }
 .wrapper::after {
     content: '';
     display: block;
-    height: 50px;
+    height: $footer-height;
 }
 
 .container {
-    width: 940px;
+    //width: 940px;
     margin: 0 auto;
+    max-width: 940px;
 }
 ul {
     padding: 0;

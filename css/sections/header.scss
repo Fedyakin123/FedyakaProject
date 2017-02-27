@@ -41,6 +41,11 @@
     border-bottom: 1px dashed #33c1e3;
     /*padding-bottom: 5px;*/
 }
+
+.contacts__icon {
+    display: none;
+}
+
 .contacts:hover {
     color: #e85f61;
     border-bottom-color: #e85f61;

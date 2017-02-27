@@ -1,0 +1,43 @@
+@media screen and (max-width: 768px) {
+  .container {
+    width: 480px;
+    //background: #CCF;
+  }
+
+  .header__left, .header__right {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 10px;
+  }
+  .about__left, .about__right, .footer__left, .footer__right {
+    float: none;
+    width: 100%;
+  }
+  .about__left {
+    height: auto;
+  }
+  .title {
+    text-align: center;
+  }
+  .about__btn {
+    text-align: center;
+  }
+  .btn {
+    display: inline-block;
+  }
+  .footer__right, .footer__left {
+    text-align: center;
+  }
+
+  .contacts {
+    font-size: 0;
+
+  }
+
+  .contacts__icon {
+    display: block;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+}

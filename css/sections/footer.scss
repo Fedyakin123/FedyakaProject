@@ -1,9 +1,9 @@
 .footer {
     position: relative;
-    min-height: 50px;
+    min-height: $footer-height;
     width: 100%;
     background-color: #414141;
-    margin-top: -50px;
+    margin-top: -$footer-height;
 }
 
 .footer__left, .footer__right {
@@ -43,7 +43,7 @@
 /*SPRITES*/
 
 .sprite {
-    background: url('../../img/icons/spritesheet.png') no-repeat;
+    background: url('http://fedyaka.ru/FedyakaProject/img/icons/spritesheet.png') no-repeat;
     display: block;
 }
 

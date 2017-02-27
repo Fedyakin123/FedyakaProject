@@ -1,0 +1,30 @@
+// variables
+$footer-height: 50px;
+
+
+// layout
+
+@import "layout/normalize";
+@import "layout/adjustement";
+@import "layout/fonts.css";
+@import "font-awesome/font-awesome";
+
+
+// sections
+
+@import "sections/common";
+@import "sections/header";
+@import "sections/sidebar";
+@import "sections/footer";
+@import "sections/hello";
+@import "sections/about";
+@import "sections/career";
+@import "sections/portfolio";
+
+
+// media
+
+@import "media/desktop";
+@import "media/laptop";
+@import "media/tablets";
+@import "media/phones";
