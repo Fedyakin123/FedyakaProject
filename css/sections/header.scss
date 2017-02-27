@@ -1,7 +1,7 @@
 .header {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
     min-height: 75px;
-    padding-bottom: 9px;
+    padding-bottom: 4px;
     margin-bottom: 23px;
 }
 
@@ -45,6 +45,8 @@
     color: #33c1e3;
     border-bottom: 1px dashed #33c1e3;
     /*padding-bottom: 5px;*/
+
+    @extend %defaultTransition;
 }
 
 .contacts__icon {

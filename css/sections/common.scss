@@ -21,6 +21,7 @@ a {
 }
 
 .bg-pattern {
+    height: auto;
     background: url("http://fedyaka.ru/FedyakaProject/img/bg/bgpattern.png");
 }
 
@@ -56,6 +57,8 @@ a {
     /*font-family: 'Open Sans', sans-serif;*/
     font-weight: bold;
     /*font-size: 14px;*/
+
+    @extend %defaultTransition;
 }
 
 .btn__text {

@@ -13,6 +13,8 @@
     display: block;
     border-right: 6px solid transparent;
     color: #414141;
+
+    @extend %defaultTransition;
 }
 
 .nav__link:hover {

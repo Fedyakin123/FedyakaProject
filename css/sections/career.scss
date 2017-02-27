@@ -28,22 +28,16 @@
 
 .career__right {
     width: 460px;
-    /*background-color: yellow;*/
 }
 
 .career__list {
     text-align: right;
-    /*padding-left: 70px;*/
 }
 
 .career__list-item {
-    /*height: 107px;*/
-    /*display: inline-block;*/
-    /*background-color: red;*/
     padding-left: 80px;
-    /*border: 1px solid black;*/
-    /*float: right;*/
     overflow: hidden;
+
 }
 .item-box {
     border-radius: 10px;
@@ -55,6 +49,7 @@
     text-align: left;
     position: relative;
 
+    @extend %defaultTransition;
 }
 
 /*Палка*/

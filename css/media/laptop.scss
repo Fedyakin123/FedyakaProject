@@ -39,7 +39,7 @@
 
   }
 
-  // Content
+  // About
 
   .about {
     margin-top: 25px;
@@ -65,5 +65,35 @@
   }
   .download-btn {
     margin-right: 23px;
+  }
+
+
+  //Career
+
+  .career {
+    padding-left: 0;
+    margin-top: 23px;
+  }
+
+  .career__img-box {
+    width: 228px;
+    height: 228px;
+  }
+
+  .career__img {
+    height: 262px;
+    right: 88px;
+  }
+
+  .career__right {
+    float: right;
+  }
+
+  .career__list-item {
+    padding-left: 103px;
+  }
+
+  .item-box {
+    width: auto;
   }
 }
