@@ -2,35 +2,31 @@
     float: left;
     width: 720px;
 }
+
 .about {
     margin-bottom: 72px;
 }
+
 .about__left {
     float: left;
     width: 340px;
     height: 395px;
-    /*height: 100%;*/
-    /*position: relative;*/
     text-align: center;
     padding-left: 7px;
 }
-.about__pic {
-    /*margin: 50px auto;*/
-}
+
 .about__right {
     float: left;
     width: 380px;
-    /*height: 395px;*/
 }
+
 .about__text {
     height: 325px;
     overflow: auto;
 }
+
 .about__description{
     margin-bottom: 62px;
-    /*width: 320px;*/
-    /*max-height: 320px;*/
-    /*overflow: auto;*/
 }
 
 .about__img {

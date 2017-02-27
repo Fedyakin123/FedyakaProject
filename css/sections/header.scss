@@ -4,10 +4,12 @@
     padding-bottom: 9px;
     margin-bottom: 23px;
 }
+
 .header__left {
     float: left;
-    padding-top: 9px;
+    padding-top: 10px;
 }
+
 .user__photo {
     display: inline-block;
     vertical-align: middle;
@@ -15,10 +17,11 @@
     border-radius: 50%;
     overflow: hidden;
 }
+
 .user__img {
-    /*border-radius: 50%;*/
     display: block;
 }
+
 .user__name {
     margin-left: 15px;
     font-size: 18px;
@@ -28,10 +31,12 @@
     color: #414141;
     max-width: 235px;
 }
+
 .header__right {
     float: right;
-    padding-top: 29px;
+    padding-top: 32px;
 }
+
 .contacts {
     line-height: 1.2;
     /*Поменять на bg-image*/

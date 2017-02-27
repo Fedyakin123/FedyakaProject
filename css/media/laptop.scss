@@ -2,8 +2,21 @@
 
   .container {
     width: 730px;
-    //background: #CFC;
   }
+
+
+  // Header
+
+  .header {
+    padding-bottom: 0;
+    margin-bottom: 17px;
+  }
+  .header__left {
+    padding-top: 6px;
+  }
+
+
+  // Sidebar
 
   .sidebar, .page {
     float: none;
@@ -26,14 +39,31 @@
 
   }
 
+  // Content
+
+  .about {
+    margin-top: 25px;
+    margin-bottom: 57px;
+  }
+
+  .about__left {
+    width: 30%;
+  }
+
+  .about__right {
+    width: 60%;
+    margin-left: 4%;
+  }
+
   .about__img {
     width: 165px;
     height: 165px;
   }
-  .about__left {
-    width: 30%;
+
+  .about__text {
+    height: 367px;
   }
-  .about__right {
-    width: 70%;
+  .download-btn {
+    margin-right: 23px;
   }
 }
