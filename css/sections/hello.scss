@@ -7,6 +7,12 @@
     position: relative;
     background-color: #fff;
     /*overflow: hidden;*/
+
+  @extend %defaultTransition;
+
+}
+.hello__box:hover {
+
 }
 
 .hello__img-box {

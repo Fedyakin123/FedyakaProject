@@ -12,6 +12,8 @@ $footer-height: 50px;
   -moz-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
+
+  //Разобраться, почему ie тупит, скорее всего придется менять all
 }
 
 // layout
