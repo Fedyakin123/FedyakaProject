@@ -96,4 +96,26 @@
   .item-box {
     width: auto;
   }
+
+
+  //Portfolio
+
+  .title_padding-left {
+    padding-left: 0;
+  }
+
+  .portfolio__list {
+    margin-top: 18px;
+    width: 109%;
+    //опять это говно
+  }
+
+  .portfolio__item {
+    width: 229px;
+    min-height: 291px;
+    margin: 0 18px 20px 1px;
+  }
+  .portfolio__img-box {
+    height: 178px;
+  }
 }

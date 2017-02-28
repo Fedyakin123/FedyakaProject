@@ -138,4 +138,36 @@
     margin-bottom: 4px;
   }
 
+  //Portfolio
+
+  .portfolio {
+    width: 98%;
+    margin-top: 18px;
+  }
+
+  .portfolio__list {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .portfolio__item {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 300px;
+    width: 94%;
+  }
+  .portfolio__img-box {
+    height: 243px;
+  }
+
+  .portfolio__text-box {
+    padding-top: 10px;
+  }
+  .portfolio__title {
+    font-size: 24px;
+    //margin-bottom: -6px;
+  }
+  .portfolio__info, .portfolio__type {
+    font-size: 16px;
+  }
 }
