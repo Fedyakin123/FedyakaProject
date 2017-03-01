@@ -25,6 +25,14 @@
 
   .contacts {
     font-size: 0;
+
+    &:hover {
+
+      &::after {
+        transform: translateY(-30%) translateX(-50%);
+        //Двигаем псевдоблок, чтобы ховер нормально ловился
+      }
+    }
   }
 
   .contacts__icon {
@@ -32,6 +40,21 @@
     font-size: 40px;
     margin-top: 9px;
     margin-right: 1px;
+  }
+
+  //Dropdown, двигаем блок и пипку
+
+  .dropdown {
+    margin-top: 0;
+    margin-left: -55px;
+
+    &::before {
+      left: 90%;
+    }
+
+    &::after {
+      left: 90%;
+    }
   }
 
 

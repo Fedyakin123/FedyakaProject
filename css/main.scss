@@ -1,8 +1,8 @@
 // variables
 
 $footer-height: 50px;
-
-
+$dropdown-width: 193px;
+$dropdown-height: 134px;
 //mixins
 
 //placeholders
@@ -15,6 +15,9 @@ $footer-height: 50px;
 
   //Разобраться, почему ie тупит, скорее всего придется менять all
 }
+
+
+
 
 // layout
 
@@ -42,3 +45,9 @@ $footer-height: 50px;
 @import "media/laptop";
 @import "media/tablets";
 @import "media/phones";
+
+
+//Animations
+
+@import "animations/animations";
+

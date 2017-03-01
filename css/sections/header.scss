@@ -35,25 +35,114 @@
 .header__right {
     float: right;
     padding-top: 32px;
+    overflow: visible;
 }
 
-.contacts {
-    line-height: 1.2;
-    /*Поменять на bg-image*/
-    font-size: 18px;
-    font-weight: bold;
+//dropdown
+
+.dropdown {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  width: $dropdown-width;
+  min-height: $dropdown-height;
+  border-radius: 9px;
+  position: absolute;
+  top: 100%;
+  //left: 50%;
+  transform: translateX(-50%);
+  left: -9999px;
+  margin-top: 14px;
+  z-index: 10;
+  font-family: 'Fira', 'Helvetica', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #414141;
+  line-height: $dropdown-height / 3;
+  padding-left: 20px;
+
+
+  &__icon {
     color: #33c1e3;
-    border-bottom: 1px dashed #33c1e3;
-    /*padding-bottom: 5px;*/
+    font-size: 21px;
 
     @extend %defaultTransition;
+
+  }
+
+  &__item {
+
+    &:hover {
+
+      .dropdown__icon {
+        color: #e85f61;
+
+        //Красим иконку по ховеру на подпункт
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid #dedede;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -6px;
+  }
+
+  &::after {
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    bottom: 98%;
+    left: 50%;
+    margin-left: -6px;
+  }
+}
+
+//contacts
+
+.contacts {
+  position: relative;
+  line-height: 1.2;
+  /*Поменять на bg-image*/
+  font-size: 18px;
+  font-weight: bold;
+  color: #33c1e3;
+  border-bottom: 1px dashed #33c1e3;
+  /*padding-bottom: 5px;*/
+
+    @extend %defaultTransition;
+
+  &:hover {
+    color: #e85f61;
+    border-bottom-color: #e85f61;
+
+    &::after {
+      content: '';
+      width: $dropdown-width;
+      height: 100px;
+      //background-color: red;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .dropdown {
+      left: 50%;
+      animation-duration: 1s;
+      -webkit-animation-name: bounceInDownCustom;
+      animation-name: bounceInDownCustom;
+
+      //Кастомная анимация из animation.css + translateX(-50%);
+    }
+  }
 }
 
 .contacts__icon {
     display: none;
-}
-
-.contacts:hover {
-    color: #e85f61;
-    border-bottom-color: #e85f61;
 }
